@@ -1,13 +1,45 @@
 hr{
     background-color: #A8D1D1;
     border-style: none;
-    border-top-style: dotted;
+    border-top-style: solid;
+     border-bottom-style:solid;
+    border-bottom-width: 3px;
     border-color: blue;
-    border-width: 7px;
-    width:40%;
+    border-top-width: 4px;
+    width:80%;
 }
 h2{
-    color:#0014FF;
+    color:#00ABB3;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.VESIT  /* this is the initial anchor tag directing to vesit site*/
+{
+    display:inline-flexbox;
+    color:#C21010;
+    padding: 20px,12px;
+    font-size: 25px;
+    font-family:monospace;
     
-
+}
+.SKILLS{
+    font-family:cursive;
+    
+}
+#CONTACT{
+    display: flow-root;
+    color:#0d73e7;
+   
+}
+.myself{
+   font-family:monospace;
+   font-size: 20px;
+   color:#0F3460;
+}
+.NAME{
+    font-family: fantasy;
+    font-size:34px;
+    color:#1746A2;
+}
+div{
+    background-color: aqua;
 }
