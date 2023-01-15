@@ -1,0 +1,74 @@
+.NAME{
+   display:grid;
+   width:min-content;
+    height:min-content;
+   padding-bottom: 0px;
+   padding-top: 11px;
+   margin-right:50px;
+  
+ 
+  
+   }
+    .flex{
+      display: flex;
+      direction:row;
+      width:min-content;
+      height:min-content
+   
+   }
+   .img{
+      padding-top:0px;
+      padding-right:60px;
+   }
+   .pre{
+      
+      padding-top:0px;
+      
+   }
+ body{
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+}
+ .name{
+    color:#91D8E4;
+    font-size: 60px;
+    font-family: fantasy;
+    padding-bottom:10px;
+ }
+
+pre{
+    font-size: 40px;
+    font-family:fantasy
+ }
+ .intro2{
+   display:grid;
+   width:min-content;
+    height:min-content;
+   padding-bottom: 0px;
+   padding-top: 10px;
+   margin-right:50px;
+}
+.myself{
+   color:aqua;
+   font-size: 25px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.head1{
+   color: cornflowerblue;
+   font-family: 'Courier New', Courier, monospace;
+   font-size:40px;
+}
+hr{
+   background-color: aquamarine;
+   border-style: none;
+    border-top-style: solid;
+     border-bottom-style:solid;
+     border-top-width: 4px;
+     border-bottom-width: 3px;
+     border-color: blue;
+}
+a{
+   color: #FD8A8A;
+}
+ 
