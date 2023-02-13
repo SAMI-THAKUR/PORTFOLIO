@@ -1,74 +1,230 @@
-.NAME{
-   display:grid;
-   width:min-content;
-    height:min-content;
-   padding-bottom: 0px;
-   padding-top: 11px;
-   margin-right:50px;
-  
- 
-  
-   }
-    .flex{
-      display: flex;
-      direction:row;
-      width:min-content;
-      height:min-content
-   
-   }
-   .img{
-      padding-top:0px;
-      padding-right:60px;
-   }
-   .pre{
-      
-      padding-top:0px;
-      
-   }
- body{
-    background-repeat:no-repeat;
-    background-size: 100% 100%;
-    background-attachment: scroll;
-}
- .name{
-    color:#91D8E4;
-    font-size: 60px;
-    font-family: fantasy;
-    padding-bottom:10px;
+html {
+   scroll-behavior:smooth;
  }
+   body{   /* main body of html*/
+      background-repeat:no-repeat;
+      background-size: 100% 100%;
+      background-color:#010A43;
+      background-attachment: scroll;
+  }
 
-pre{
-    font-size: 40px;
-    font-family:fantasy
+  #menu   /* upper part of website */
+  {
+   display: flex;
+   height:min-content;
+   width: 100%;
+   padding-top:-4px;
+ background-color: #362FD9;
  }
- .intro2{
-   display:grid;
-   width:min-content;
-    height:min-content;
-   padding-bottom: 0px;
-   padding-top: 10px;
-   margin-right:50px;
+  .site{   /* avatar anchor*/
+   position:fixed;
+   margin-left:5px;
+   margin-top: -3px;
+   margin-bottom: 13px;
+   width: max-content;
+   height: min-content;
+  }
+.site:hover{
+   transform: scale(1.1); 
 }
-.myself{
-   color:aqua;
-   font-size: 25px;
-   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  .buttons{  /* HOME ABOUT PROJECTS  --> DIV */ 
+   display: flex;
+   width: max-content;
+   height: min-content;
+   margin-left:850px;
+   }
+ 
+   .buttons a{
+      height: max-content;
+      width: max-content;
+      text-decoration: none;
+      color:#F7F5EB;
+      font-size:22px;
+      font-family: 'Fredoka One', cursive;
+      display: block;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-block-start: 1.33em;
+      padding-block-end: 1.33em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+   }
+   .buttons a:hover {
+      color: #ee5757;
+      background-color: #010A43;
+    
+  }
+  /*                    ##################################################################                */
+  #INTRO{
+   display: flex;
+   width: max-content;
+   height: 550px;
+   padding-left:110px;
+  }
+    .pre{  /* the  first para of site */
+      display: grid;
+      width:max-content;
+      height: min-content;
+      margin-left:30px;
+      margin-top:100px;
+     }
+  
+  h3{ /* my name is */
+   color:#AEE2FF;
+   margin:0px;
+   font-size:20px;
+   font-family: 'Fira Mono', monospace;
+  height:min-content;
+  padding-left:10px;
+
+  }
+  h1{  /* NAME main*/
+  
+   /* width:max-content; */
+   height: min-content;
+   margin: 0px;
+   font-size:90px;
+   font-family: 'PT Mono', monospace;
+   color:#F7F5EB;
 }
-.head1{
-   color: cornflowerblue;
-   font-family: 'Courier New', Courier, monospace;
-   font-size:40px;
+  .myself{  /* basic info */
+   color:#AEE2FF;
+   height:min-content;
+   font-size: 23px;
+   font-family: 'Fira Mono', monospace;
+   font-style: oblique;
+   
+   
+}
+#RESUME{
+   padding-top: 60px;
+}
+.img1{
+   height:min-content;
+   width: min-content;
+   margin-top:160px;
+   margin-bottom:30px;
+   margin-left:20px;
+}
+.hr2{
+   border-color:#F7F5EB;
+   width: 70%;
+   border-style: solid;
+  
+}
+
+a{  /*  VESIT link */
+   color: #FD8A8A;
+   text-decoration: none;
+}
+a:hover{
+   color: #ffee00;
 }
 hr{
-   background-color: aquamarine;
-   border-style: none;
-    border-top-style: solid;
+     background-color:#A2EAE2;
+     border-style: none;
+     border-top-style: solid;
      border-bottom-style:solid;
-     border-top-width: 4px;
-     border-bottom-width: 3px;
-     border-color: blue;
+     border-top-width: 2px;
+     border-bottom-width: 2px;
+     border-color: #1D1CE5;
 }
-a{
-   color: #FD8A8A;
+/*      ###########################################################################################    */
+#AB{
+   display: flex;
+  margin-top:50px;
+  padding-left:30px;
 }
+
+.AB1{
+   margin-top: 120px;
+ margin-left: 110px;
+}
+.AB2{
+   margin-top: 60px;
+   height:min-content;
+   width: max-content;
+   margin-left: 0px;
+margin-left: 30px;
+}
+pre{
+   height:min-content;
+   font-size:20px;
+   color:#AEE2FF;
+   font-family: 'Fira Mono', monospace;
+}
+span{
+   color: #010A43;
+   font-weight: bold;
+}
+ul{
+   
+   height:min-content;
+   width: max-content;
+   line-height:13px;
+   margin-left:30px;
+   margin-bottom: 110px;
+   
+}
+li{
+   height: min-content;
+  align-items: center;
+ }
+ button {
+    width: 15em;
+   position: relative;
+   height: 4.5em;
+   border: 3px ridge #AEE2FF;
+   outline: none;
+   background-color: transparent;
+   color: #F7F5EB;
+   transition: 1s;
+   border-radius: 0.3em;
+   font-size: 16px;
+   font-weight: bold;
+   padding-bottom:15px;
+ }
+ 
+ button::after {
+   content: "";
+   position: absolute;
+   top: -10px;
+   left: 3%;
+   width: 95%;
+   height: 40%;
+   background-color: #010A43;
+   transition: 0.5s;
+   transform-origin: center;
+ }
+ 
+ button::before {
+   content: "";
+   transform-origin: center;
+   position: absolute;
+   top: 80%;
+   left: 3%;
+   width: 95%;
+   height: 40%;
+   background-color: #010A43;
+   transition: 0.5s;
+ }
+ 
+ button:hover::before, button:hover::after {
+   transform: scale(0)
+ }
+ 
+ button:hover {
+   box-shadow: inset 0px 0px 25px #AEE2FF;
+ }
+
+.headings{
+   color:#F7F5EB;
+   height: min-content;
+   margin: 0px;
+   font-size:80px;
+   font-family: 'PT Mono', monospace;
+   
+}
+
  
