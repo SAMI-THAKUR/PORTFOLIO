@@ -4,63 +4,79 @@ html {
    body{   /* main body of html*/
       background-repeat:no-repeat;
       background-size: 100% 100%;
-      background-color:#010A43;
+      background-color:#AEE2FF;
       background-attachment: scroll;
   }
+ 
 
-  #menu   /* upper part of website */
-  {
+.navbar {
+   
+   background-color: rgb(22, 7, 36);
    display: flex;
-   height:min-content;
-   width: 100%;
-   padding-top:-4px;
- background-color: #362FD9;
- }
-  .site{   /* avatar anchor*/
-   position:fixed;
-   margin-left:5px;
-   margin-top: -3px;
-   margin-bottom: 13px;
-   width: max-content;
-   height: min-content;
-  }
-.site:hover{
-   transform: scale(1.1); 
+   justify-content: space-around;
+   align-items: center;
+   line-height: 40px;
+  position: fixed;
+  width: 100%;
+  
 }
 
-  .buttons{  /* HOME ABOUT PROJECTS  --> DIV */ 
+
+
+.checkBtn {
+   display: none;
+}
+
+#check {
+   display: none;
+}
+
+.checkBtn {
+   cursor: pointer;
+   font-size: 30px;
+   float: right;
+   color: #ed1e79;
+   line-height: 80px;
+}
+
+.right ul {
    display: flex;
-   width: max-content;
-   height: min-content;
-   margin-left:850px;
-   }
+   list-style: none;
+}
+
+.right ul li a {
+   padding: 15px 23px;
+   padding-left: 22px;
+   padding-right: 22px;
+   font-size: 2rem;
+   color: white;
+   font-family: 'Fredoka One',cursive;
+   cursor: pointer;
+   text-decoration: none;
+   transition: all 0.4s;
+}
+
+.right ul li a:hover {
+   background-color: #AEE2FF;
+   border-radius: 7px;
+   color: rgb(22, 7, 36);
+   
+   border-color: #010A43;
+   border-style: solid;
+   
+}
+
+
+  
  
-   .buttons a{
-      height: max-content;
-      width: max-content;
-      text-decoration: none;
-      color:#F7F5EB;
-      font-size:22px;
-      font-family: 'Fredoka One', cursive;
-      display: block;
-      padding-right: 20px;
-      padding-left: 20px;
-      padding-block-start: 1.33em;
-      padding-block-end: 1.33em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-   }
-   .buttons a:hover {
-      color: #ee5757;
-      background-color: #010A43;
-    
-  }
-  /*                    ##################################################################                */
+  /*          DIV II          ##################################################################                */
+
   #INTRO{
-   display: flex;
+   display: grid;
    width: max-content;
    height: 550px;
    padding-left:110px;
+   padding-top: 40px;
   }
     .pre{  /* the  first para of site */
       display: grid;
@@ -71,9 +87,9 @@ html {
      }
   
   h3{ /* my name is */
-   color:#AEE2FF;
+   color:#2192FF;
    margin:0px;
-   font-size:20px;
+   font-size:21px;
    font-family: 'Fira Mono', monospace;
   height:min-content;
   padding-left:10px;
@@ -86,14 +102,16 @@ html {
    margin: 0px;
    font-size:90px;
    font-family: 'PT Mono', monospace;
-   color:#F7F5EB;
+   color:#06283D;
+   font-weight: bolder;
 }
   .myself{  /* basic info */
-   color:#AEE2FF;
+   color:#2192FF;
    height:min-content;
-   font-size: 23px;
+   font-size: 24px;
    font-family: 'Fira Mono', monospace;
    font-style: oblique;
+   font-weight: bold;
    
    
 }
@@ -105,36 +123,34 @@ html {
    width: min-content;
    margin-top:160px;
    margin-bottom:30px;
-   margin-left:20px;
+   margin-left:70px;
 }
 .hr2{
-   border-color:#F7F5EB;
-   width: 70%;
-   border-style: solid;
-  
-}
-
-a{  /*  VESIT link */
-   color: #FD8A8A;
-   text-decoration: none;
-}
-a:hover{
-   color: #ffee00;
-}
-hr{
-     background-color:#A2EAE2;
+   width: 69%;
+   background-color:#A2EAE2;
      border-style: none;
      border-top-style: solid;
      border-bottom-style:solid;
      border-top-width: 2px;
      border-bottom-width: 2px;
      border-color: #1D1CE5;
+  
 }
-/*      ###########################################################################################    */
+
+a{  /*  VESIT link */
+   color: #ff0404;
+   text-decoration: none;
+}
+a:hover{
+   color: #010A43;
+}
+
+/*     DIV III     ###########################################################################################    */
 #AB{
    display: flex;
   margin-top:50px;
-  padding-left:30px;
+  padding-left:50px;
+  margin-bottom:100px;
 }
 
 .AB1{
@@ -148,83 +164,138 @@ hr{
    margin-left: 0px;
 margin-left: 30px;
 }
-pre{
+.AB2 p{
    height:min-content;
-   font-size:20px;
-   color:#AEE2FF;
+   font-size:23px;
+   color:#2192FF;
    font-family: 'Fira Mono', monospace;
-}
-span{
-   color: #010A43;
    font-weight: bold;
 }
-ul{
-   
-   height:min-content;
-   width: max-content;
-   line-height:13px;
-   margin-left:30px;
-   margin-bottom: 110px;
-   
-}
-li{
-   height: min-content;
-  align-items: center;
- }
- button {
-    width: 15em;
+button {
+   font-family: 'Fira Mono', monospace;
+   font-size: 17px;
+   padding: 1em 2.7em;
+   font-weight: 500;
+   background: #06283D;
+   color: white;
+   border: none;
    position: relative;
-   height: 4.5em;
-   border: 3px ridge #AEE2FF;
-   outline: none;
-   background-color: transparent;
-   color: #F7F5EB;
-   transition: 1s;
-   border-radius: 0.3em;
-   font-size: 16px;
-   font-weight: bold;
-   padding-bottom:15px;
- }
- 
- button::after {
-   content: "";
+   overflow: hidden;
+   border-radius: 0.6em;
+  }
+.gradient {
    position: absolute;
-   top: -10px;
-   left: 3%;
-   width: 95%;
-   height: 40%;
-   background-color: #010A43;
-   transition: 0.5s;
-   transform-origin: center;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   border-radius: 0.6em;
+   margin-top: -0.25em;
+   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  }
+  
+  .label {
+   position: relative;
+   top: -1px;
  }
- 
- button::before {
-   content: "";
-   transform-origin: center;
+  
+  .transition {
+   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+   transition-duration: 320ms;
+   background-color: #2192FF;
+   border-radius: 9999px;
+   width: 0;
+   height: 0;
    position: absolute;
-   top: 80%;
-   left: 3%;
-   width: 95%;
-   height: 40%;
-   background-color: #010A43;
-   transition: 0.5s;
- }
- 
- button:hover::before, button:hover::after {
-   transform: scale(0)
- }
- 
- button:hover {
-   box-shadow: inset 0px 0px 25px #AEE2FF;
- }
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   
+   
+  }
+  
+  button:hover .transition {
+   width: 14em;
+   height: 14em;
+   
+  }
+  
+  button:active {
+   transform: scale(0.97);
+  }
 
 .headings{
-   color:#F7F5EB;
+   color:#06283D;
    height: min-content;
    margin: 0px;
    font-size:80px;
    font-family: 'PT Mono', monospace;
+   font-weight: bolder;
    
 }
+/*        DIV III  ###########################################################################    */
+#SKILLS{
+   padding-top: 50px;
+}
+#SK1{
+   display: flex;
+   padding-left:60px;
+   padding-top: 100px;
+   justify-content: space-evenly;
+}
 
+
+.logo{
+   padding-left: 50px;
+   padding-right: 50px;
+   padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.TECH:hover{
+   transform: scale(1.06); 
+   transition: 0.5s;
+}
+
+.container {
+   width: max-content;
+   height: min-content;
+   display: grid;
+   background-color: #4bf0ea;
+   border-radius: 0.9em;
+   border:2px;
+ align-items: center;
+}
+.TECH1{
+   height:fit-content;
+  font-size:20px;
+   color:#010A43;
+   font-family:  monospace;
+   font-weight: bold;
+   position: absolute;
+   
+   padding-top: 1%;
+   opacity: 0;
+   transition: 0.25s;
+}
+.TECH1 p{
+ 
+    padding-left: 10px;
+}
+.container:hover .TECH1{
+   opacity: 1;
+   transition: 0.4s;
+}
+.container:hover .TECH{
+   opacity: 0.08;
+   transition: 0.3s;
+}
+.container:hover {
+  
+   background-color: #AEE2FF;
+   border-width: 3px;
+   border-style: solid;
+   border-color: #06283D;
+   transition: 0.4s;
+}
  
