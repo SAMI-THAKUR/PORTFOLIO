@@ -11,13 +11,15 @@ html {
 
 .navbar {
    
-   background-color: rgb(22, 7, 36);
+   background-color: #010A43;
    display: flex;
    justify-content: space-around;
    align-items: center;
    line-height: 40px;
   position: fixed;
-  width: 100%;
+  width: 99%;
+  border-radius:10px;
+  
   
 }
 
@@ -45,7 +47,7 @@ html {
 }
 
 .right ul li a {
-   padding: 15px 23px;
+   padding: 15px 24px;
    padding-left: 22px;
    padding-right: 22px;
    font-size: 2rem;
@@ -53,16 +55,17 @@ html {
    font-family: 'Fredoka One',cursive;
    cursor: pointer;
    text-decoration: none;
-   transition: all 0.4s;
+   transition: all 0.5s;
 }
 
 .right ul li a:hover {
    background-color: #AEE2FF;
-   border-radius: 7px;
-   color: rgb(22, 7, 36);
    
+   color: #010A43;
+   border-radius: 3px;
    border-color: #010A43;
    border-style: solid;
+  
    
 }
 
@@ -284,11 +287,11 @@ button {
 }
 .container:hover .TECH1{
    opacity: 1;
-   transition: 0.4s;
+   transition: 0.5s;
 }
 .container:hover .TECH{
    opacity: 0.08;
-   transition: 0.3s;
+   transition: 0.4s;
 }
 .container:hover {
   
@@ -296,6 +299,6 @@ button {
    border-width: 3px;
    border-style: solid;
    border-color: #06283D;
-   transition: 0.4s;
+   transition: 0.6s;
 }
  

@@ -39,7 +39,10 @@
 #check:checked~ul {
    left: 0%;
 }
-   
+
+.right ul li a:hover {
+   background-color: #AEE2FF;
+} 
 /**********************************************************************/
    #INTRO{
     display: grid;
