@@ -1,0 +1,236 @@
+@media screen and (max-width:850px){
+    body{
+      
+    }
+
+#menu {
+   background-color:#AEE2FF;
+   display: flex;
+   line-height: 5px;
+}
+
+.list {
+   width: 90%;
+   height: 90vh;
+   background-color: #AEE2FF;
+   
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   top: 2rem;
+   left: 100%;
+   transition: all 1s;
+   
+}
+.list li{
+   padding:10px;
+}
+#check {
+   display: none;
+}
+
+.checkBtn {
+   display: block;
+}
+.checkBtn {
+   cursor: pointer;
+   font-size: 30px;
+   float: right;
+   color: #010A43;
+   line-height: 90px;
+}
+#check:checked~ul {
+   left: 0%;
+}
+.right ul li a:hover{
+   border-radius: 0px;
+   border-style: none;
+   background-color: #AEE2FF;
+   color: #010A43;
+}
+.right ul li a:hover~ul{
+   left: 0%;
+}
+
+/**********************************************************************/
+   #INTRO{
+    display: grid;
+    height: 550px;
+    padding-left:2px;
+    padding-top: 40px;
+   
+   }
+   .vertical-menu {
+      padding-right: 0px;
+      padding-top: 0px;
+      padding-top: 0px;
+     }
+   .socials{
+      display: none ;
+   }
+   .pre{  /* the  first para of site */
+      display: grid;
+      width:max-content;
+      height: min-content;
+      margin-left:55px;
+      margin-top:100px;
+     }
+     h3{ /* my name is */
+   font-size:20px;
+}
+   h1{  /* NAME main*/
+   font-size:70px;
+}
+   .myself{  /* basic info */
+   font-size: 20px;
+}
+br{
+    display: none;
+}
+ #RESUME{
+    padding-top: 40px;
+    
+ }
+ 
+ .hr2{
+opacity: 0;
+ }
+.name{
+    width: min-content;
+ }
+ .p{
+    width: 330;
+ }
+
+
+ /*******************************************************************************************/
+ #AB{
+    display: grid;
+  
+   padding-left:15px;
+   margin-bottom:50px;
+ }
+ .ABOUT{
+grid-row: 2;
+ }
+ .AB1{
+    margin-top: 120px;
+    margin-left: 40px;
+ 
+ }
+ .AB2{
+    width: 330px;
+    margin-left: 0px;
+    margin-left: 20px;
+ }
+ .br{
+    display: none;
+ }
+ .AB2 p{
+   font-size:20px;
+   }
+ .img1{
+    margin-left:10px;
+    grid-row: 1;
+ }
+ .headings{
+    margin: 0px;
+    font-size:70px;
+  }
+  .img1{
+   height:min-content;
+   width: min-content;
+   margin-top:110px;
+   margin-bottom:30px;
+   margin-left:0px;
+}
+
+  /*******************************************************************************/
+  #SKILLS{
+    padding-top: 50px;
+    padding-left:9px;
+ }
+ .SK{
+   padding-left: 50px;
+}
+ #SK1{
+    display: grid;
+    padding-left:5px;
+    padding-top: 100px;
+}
+#SK2{
+   display: grid;
+   padding-left:5px;
+   padding-top: 10px;
+}
+ 
+ 
+ .logo{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+   
+ }
+ 
+
+ 
+ .container {
+   width: min-content;
+   height: min-content;
+   display: grid;
+   background-color: #AEE2FF;
+   border-width: 2px;
+   border-style: solid;
+   border-color: #2192FF;
+  border-radius: 10px;
+  
+   align-items: center;
+   margin-bottom:19px;
+   box-shadow: 12px 9px 3px 1px #00d0fa;
+
+}
+.TECH1{
+   height:min-content;
+  font-size:20px;
+   color:#010A43;
+   font-family:  monospace;
+   font-weight: bold;
+   position: inherit;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 0%;
+   opacity: 1;
+   transition: 0.25s;
+}
+
+.container:hover .TECH1{
+   opacity: 1;
+   transition: 0s;
+}
+.container:hover .TECH{
+   opacity: 1;
+   transition: 0s;
+}
+.TECH:hover{
+   transform: scale(1); 
+   transition: 0s;
+}
+.container:hover {
+  
+   background-color: #AEE2FF;
+   border-width: 2px;
+   border-style: solid;
+   border-color: #2192FF;
+  border-radius: 10px;
+  
+   transition: 0s;
+   box-shadow: 12px 9px 3px 1px #00d0fa;
+
+}
+
+ /********************************************************************************/
+ .PR{
+   padding-left: 10px;
+}
+}

@@ -2,6 +2,7 @@ html {
    scroll-behavior:smooth;
  }
    body{   /* main body of html*/
+      cursor: pointer;
       background-repeat:no-repeat;
       background-size: 100% 100%;
       background-color:#AEE2FF;
@@ -10,21 +11,19 @@ html {
  
 
 .navbar {
-   
-   background-color: #010A43;
+  background-color: #AEE2FF;
    display: flex;
    justify-content: space-around;
    align-items: center;
    line-height: 40px;
   position: fixed;
+ z-index: 1;
   width: 99%;
   border-radius:10px;
-  
-  
+  border-style: solid;
+  border-color: #010A43;
+  opacity:1;
 }
-
-
-
 .checkBtn {
    display: none;
 }
@@ -50,21 +49,20 @@ html {
    padding: 15px 24px;
    padding-left: 22px;
    padding-right: 22px;
-   font-size: 2rem;
-   color: white;
+   font-size: 23px;
+   color: #010A43;;
    font-family: 'Fredoka One',cursive;
    cursor: pointer;
    text-decoration: none;
-   transition: all 0.5s;
+   transition: all 0.2s;
 }
 
 .right ul li a:hover {
-   background-color: #AEE2FF;
-   
-   color: #010A43;
-   border-radius: 3px;
-   border-color: #010A43;
+  
+  border-color: #010A43;
+   border-radius: 10px;
    border-style: solid;
+   box-shadow: 2px 1px 5px 1px #00d0fa ;
   
    
 }
@@ -78,21 +76,56 @@ html {
    display: grid;
    width: max-content;
    height: 550px;
-   padding-left:110px;
+   padding-left:40px;
    padding-top: 40px;
   }
+  .INTRO1{
+   display: flex;
+  }
+  .socials{
+   position: fixed;
+  }
+  .vertical-menu {
+   padding-right: 50px;
+   
+   padding-top: 100px;
+  }
+  .vertical-menu a {
+   background-color: #AEE2FF; /* Grey background color */
+   
+   display: block; /* Make the links appear below each other */
+   padding-top: 35px;
+   text-decoration: none; /* Remove underline from links */
+ }
+ .vertical-menu a i{
+   color:#62CDFF;
+ }
+ .vertical-menu a i:hover{
+   color:#010A43;
+   transform:scale(1.3);
+   transition: 0.5s;
+ }
+
+ .vl {
+   border-left: 3.4px solid #62CDFF ;
+   height: 115px;
+   margin-top: 20px;
+   margin-left: 13px;
+ }
+ 
     .pre{  /* the  first para of site */
       display: grid;
       width:max-content;
       height: min-content;
-      margin-left:30px;
+      margin-left:180px;
       margin-top:100px;
      }
+    
   
   h3{ /* my name is */
    color:#2192FF;
    margin:0px;
-   font-size:21px;
+   font-size:20px;
    font-family: 'Fira Mono', monospace;
   height:min-content;
   padding-left:10px;
@@ -103,15 +136,15 @@ html {
    /* width:max-content; */
    height: min-content;
    margin: 0px;
-   font-size:90px;
-   font-family: 'PT Mono', monospace;
+   font-size:85px;
+   font-family: 'Patua One', cursive;
    color:#06283D;
    font-weight: bolder;
 }
   .myself{  /* basic info */
    color:#2192FF;
    height:min-content;
-   font-size: 24px;
+   font-size: 22px;
    font-family: 'Fira Mono', monospace;
    font-style: oblique;
    font-weight: bold;
@@ -124,9 +157,9 @@ html {
 .img1{
    height:min-content;
    width: min-content;
-   margin-top:160px;
+   margin-top:110px;
    margin-bottom:30px;
-   margin-left:70px;
+   margin-left:90px;
 }
 .hr2{
    width: 69%;
@@ -152,13 +185,13 @@ a:hover{
 #AB{
    display: flex;
   margin-top:50px;
-  padding-left:50px;
+  padding-left:130px;
   margin-bottom:100px;
 }
 
 .AB1{
    margin-top: 120px;
- margin-left: 110px;
+ margin-left: 90px;
 }
 .AB2{
    margin-top: 60px;
@@ -169,63 +202,39 @@ margin-left: 30px;
 }
 .AB2 p{
    height:min-content;
-   font-size:23px;
+   font-size:21px;
    color:#2192FF;
    font-family: 'Fira Mono', monospace;
    font-weight: bold;
 }
+.img1 .img{
+   height:360px;
+ 
+   border-style: solid;
+   border-width: 2px;
+   border-radius: 15px;
+   padding: 20px;
+   border-color: #010A43;
+   box-shadow: 20px 15px 5px 1px #06283D;
+}
 button {
-   font-family: 'Fira Mono', monospace;
-   font-size: 17px;
-   padding: 1em 2.7em;
-   font-weight: 500;
-   background: #06283D;
-   color: white;
-   border: none;
-   position: relative;
-   overflow: hidden;
-   border-radius: 0.6em;
-  }
-.gradient {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   left: 0;
-   top: 0;
-   border-radius: 0.6em;
-   margin-top: -0.25em;
-   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-  }
-  
-  .label {
-   position: relative;
-   top: -1px;
+   font-family: monospace;
+   font-size: 1.5rem;
+   color: #FAFAFA;
+   text-transform: uppercase;
+   padding: 10px 20px;
+   border-radius: 10px;
+   border: 2px solid #FAFAFA;
+   background: #010A43 ;
+   box-shadow: 3px 3px #fafafa;
+   cursor: pointer;
+   margin: 10px 0;
  }
-  
-  .transition {
-   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-   transition-duration: 320ms;
-   background-color: #2192FF;
-   border-radius: 9999px;
-   width: 0;
-   height: 0;
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-   
-   
-  }
-  
-  button:hover .transition {
-   width: 14em;
-   height: 14em;
-   
-  }
-  
-  button:active {
-   transform: scale(0.97);
-  }
+
+ button:active {
+   box-shadow: none;
+   transform: translate(3px, 3px);
+ }
 
 .headings{
    color:#06283D;
@@ -238,7 +247,12 @@ button {
 }
 /*        DIV III  ###########################################################################    */
 #SKILLS{
-   padding-top: 50px;
+   margin-top: 50px;
+   padding-left:50px;
+   
+}
+.SK{
+   padding-left: 140px;
 }
 #SK1{
    display: flex;
@@ -246,7 +260,13 @@ button {
    padding-top: 100px;
    justify-content: space-evenly;
 }
-
+#SK2{
+   display: flex;
+   padding-left:60px;
+   padding-top: 100px;
+   margin-bottom:100px;
+   justify-content: space-evenly;
+}
 
 .logo{
    padding-left: 50px;
@@ -264,9 +284,11 @@ button {
    width: max-content;
    height: min-content;
    display: grid;
-   background-color: #4bf0ea;
-   border-radius: 0.9em;
-   border:2px;
+   background-color: #AEE2FF;
+   border-width: 2px;
+   border-style: solid;
+   border-color: #2192FF;
+  border-radius: 10px;
  align-items: center;
 }
 .TECH1{
@@ -276,7 +298,7 @@ button {
    font-family:  monospace;
    font-weight: bold;
    position: absolute;
-   
+   z-index: 0;
    padding-top: 1%;
    opacity: 0;
    transition: 0.25s;
@@ -296,9 +318,18 @@ button {
 .container:hover {
   
    background-color: #AEE2FF;
-   border-width: 3px;
+   border-width: 3.5px;
    border-style: solid;
+   border-radius:12px;
    border-color: #06283D;
    transition: 0.6s;
+   box-shadow: 19px 15px 5px 1px #00d0fa;
 }
- 
+   /**************************************************************************************/
+#PROJECT{
+   padding-top: 150px;
+   padding-left:50px;
+}
+   .PR{
+     padding-left: 140px;
+   }

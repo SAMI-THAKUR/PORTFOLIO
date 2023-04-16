@@ -4,24 +4,28 @@
     }
 
 #menu {
-   background-color: rgb(22, 7, 36);
+   background-color:#AEE2FF;
    display: flex;
-   line-height: 5rem;
+   line-height: 5px;
 }
 
 .list {
-   width: 100%;
-   height: 100vh;
-   background-color: rgb(22, 7, 36);
+   width: 90%;
+   height: 90vh;
+   background-color: #AEE2FF;
+   
    text-align: center;
    display: flex;
    flex-direction: column;
    position: fixed;
-   top: 4rem;
+   top: 2rem;
    left: 100%;
    transition: all 1s;
+   
 }
-
+.list li{
+   padding:10px;
+}
 #check {
    display: none;
 }
@@ -33,23 +37,45 @@
    cursor: pointer;
    font-size: 30px;
    float: right;
-   color: #ed1e79;
-   line-height: 80px;
+   color: #010A43;
+   line-height: 90px;
 }
 #check:checked~ul {
    left: 0%;
 }
-
-.right ul li a:hover {
+.right ul li a:hover{
+   border-radius: 0px;
+   border-style: none;
    background-color: #AEE2FF;
-} 
+   color: #010A43;
+}
+.right ul li a:hover~ul{
+   left: 0%;
+}
+
 /**********************************************************************/
    #INTRO{
     display: grid;
     height: 550px;
-    padding-left:10px;
+    padding-left:2px;
     padding-top: 40px;
+   
    }
+   .vertical-menu {
+      padding-right: 0px;
+      padding-top: 0px;
+      padding-top: 0px;
+     }
+   .socials{
+      display: none ;
+   }
+   .pre{  /* the  first para of site */
+      display: grid;
+      width:max-content;
+      height: min-content;
+      margin-left:55px;
+      margin-top:100px;
+     }
      h3{ /* my name is */
    font-size:20px;
 }
@@ -76,6 +102,7 @@ opacity: 0;
  .p{
     width: 330;
  }
+
 
  /*******************************************************************************************/
  #AB{
@@ -108,21 +135,35 @@ grid-row: 2;
     grid-row: 1;
  }
  .headings{
-   margin: 0px;
+    margin: 0px;
     font-size:70px;
   }
+  .img1{
+   height:min-content;
+   width: min-content;
+   margin-top:110px;
+   margin-bottom:30px;
+   margin-left:0px;
+}
 
   /*******************************************************************************/
   #SKILLS{
     padding-top: 50px;
+    padding-left:9px;
  }
+ .SK{
+   padding-left: 50px;
+}
  #SK1{
     display: grid;
     padding-left:5px;
     padding-top: 100px;
-   
-    
- }
+}
+#SK2{
+   display: grid;
+   padding-left:5px;
+   padding-top: 10px;
+}
  
  
  .logo{
@@ -135,42 +176,61 @@ grid-row: 2;
 
  
  .container {
-    width: min-content;
-    height: min-content;
-    display: grid;
-    background-color: #4bf0ea;
-    border-radius: 0.9em;
-    border:2px;
-    align-items: center;
-    margin-bottom:15px;
+   width: min-content;
+   height: min-content;
+   display: grid;
+   background-color: #AEE2FF;
+   border-width: 2px;
+   border-style: solid;
+   border-color: #2192FF;
+  border-radius: 10px;
+  
+   align-items: center;
+   margin-bottom:19px;
+   box-shadow: 12px 9px 3px 1px #00d0fa;
 
- }
- .TECH1{
-    height:fit-content;
-   font-size:20px;
-    color:#010A43;
-    font-family:  monospace;
-    font-weight: bold;
-    position: relative;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 2%;
-    opacity: 1;
-    transition: 0.25s;
- }
- 
+}
+.TECH1{
+   height:min-content;
+  font-size:20px;
+   color:#010A43;
+   font-family:  monospace;
+   font-weight: bold;
+   position: inherit;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 0%;
+   opacity: 1;
+   transition: 0.25s;
+}
 
- .container:hover {
-   display: none;
+.container:hover .TECH1{
+   opacity: 1;
+   transition: 0s;
+}
+.container:hover .TECH{
+   opacity: 1;
+   transition: 0s;
 }
 .TECH:hover{
-    display: none;
- }
- .container:hover .TECH1{
-   display: none;
- }
- .container:hover .TECH{
- 
-    display: none;
- }
+   transform: scale(1); 
+   transition: 0s;
+}
+.container:hover {
+  
+   background-color: #AEE2FF;
+   border-width: 2px;
+   border-style: solid;
+   border-color: #2192FF;
+  border-radius: 10px;
+  
+   transition: 0s;
+   box-shadow: 12px 9px 3px 1px #00d0fa;
+
+}
+
+ /********************************************************************************/
+ .PR{
+   padding-left: 10px;
+}
 }

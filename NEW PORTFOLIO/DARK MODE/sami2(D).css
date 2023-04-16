@@ -1,0 +1,338 @@
+html {
+   scroll-behavior:smooth;
+ }
+   body{   /* main body of html*/
+      cursor: pointer;
+      background-repeat:no-repeat;
+      background-size: 100% 100%;
+      background-color:#21262d;
+      background-attachment: scroll;
+  }
+ 
+
+.navbar {
+  background-color: #21262d;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   line-height: 40px;
+  position: fixed;
+ 
+  width: 99%;
+  border-radius:10px;
+  border-style: solid;
+  border-color: #dddfebed;
+  opacity:1;
+}
+.checkBtn {
+   display: none;
+}
+
+#check {
+   display: none;
+}
+
+.checkBtn {
+   cursor: pointer;
+   font-size: 30px;
+   float: right;
+   color: #ed1e79;
+   line-height: 80px;
+}
+
+.right ul {
+   display: flex;
+   list-style: none;
+}
+
+.right ul li a {
+   padding: 15px 24px;
+   padding-left: 22px;
+   padding-right: 22px;
+   font-size: 23px;
+   color: #77bdfb;
+   font-family: 'Fredoka One',cursive;
+   cursor: pointer;
+   text-decoration: none;
+   transition: all 0.2s;
+}
+
+.right ul li a:hover {
+  color: #77bdfb;
+  border-color: #505252;
+   border-radius: 10px;
+   border-style: solid;
+   box-shadow: 5px 0px 2px 1px  #000000;
+}
+.right ul:hover a{
+     color:#505252;
+}
+  
+ 
+  /*          DIV II          ##################################################################                */
+
+  #INTRO{
+   display: grid;
+   width: max-content;
+   height: 550px;
+   padding-left:40px;
+   padding-top: 40px;
+  }
+  .INTRO1{
+   display: flex;
+  }
+  .socials{
+   position: fixed;
+  }
+  .vertical-menu {
+   padding-right: 50px;
+   
+   padding-top: 100px;
+  }
+  .vertical-menu a {
+   background-color: #21262d; /* Grey background color */
+   
+   display: block; /* Make the links appear below each other */
+   padding-top: 35px;
+   text-decoration: none; /* Remove underline from links */
+ }
+ .vertical-menu a i{
+   color:#89929b;
+ }
+ .vertical-menu a i:hover{
+   color:#77bdfb;
+   transform:scale(1.4);
+   transition: 0.3s;
+ }
+
+
+ .vl {
+   border-left: 3.4px solid #89929b;
+   height: 115px;
+   margin-top: 20px;
+   margin-left: 13px;
+ }
+ 
+    .pre{  /* the  first para of site */
+      display: grid;
+      width:max-content;
+      height: min-content;
+      margin-left:180px;
+      margin-top:100px;
+     }
+    
+  
+  h3{ /* my name is */
+   color:#cea5fb;
+   margin:0px;
+   font-size:20px;
+   font-family: 'Fira Mono', monospace;
+  height:min-content;
+  padding-left:10px;
+
+  }
+  h1{  /* NAME main*/
+  
+   /* width:max-content; */
+   height: min-content;
+   margin: 0px;
+   font-size:85px;
+   font-family: 'Patua One', cursive;
+  
+   color:#77bdfb;
+   
+}
+  .myself{  /* basic info */
+   color:#cea5fb;
+   height:min-content;
+   font-size: 22px;
+   font-family: 'Fira Mono', monospace;
+   font-style: oblique;
+   font-weight: bold;
+   
+   
+}
+#RESUME{
+   padding-top: 60px;
+}
+.img1{
+   height:min-content;
+   width: min-content;
+   margin-top:110px;
+   margin-bottom:30px;
+   margin-left:90px;
+}
+.hr2{
+   width: 69%;
+   background-color:#A2EAE2;
+     border-style: none;
+     border-top-style: solid;
+     border-bottom-style:solid;
+     border-top-width: 2px;
+     border-bottom-width: 2px;
+     border-color: #faa356;
+  
+}
+
+
+a{  /*  VESIT link */
+   color: #FF6D60;
+   text-decoration: none;
+}
+a:hover{
+   color: #cea5fb;
+}
+
+button {
+   font-family: monospace;
+   font-size: 1.5rem;
+   color: #000000;
+   text-transform: uppercase;
+   padding: 10px 20px;
+   border-radius: 10px;
+   border: 2px solid #FAFAFA;
+   background: #62CDFF;
+   box-shadow: 3px 3px #fafafa;
+   cursor: pointer;
+   margin: 10px 0;
+ }
+
+ button:active {
+   box-shadow: none;
+   transform: translate(3px, 3px);
+ }
+/*     DIV III     ###########################################################################################    */
+#AB{
+   display: flex;
+  margin-top:50px;
+  padding-left:130px;
+  margin-bottom:100px;
+}
+
+.AB1{
+   margin-top: 120px;
+ margin-left: 90px;
+}
+.AB2{
+   margin-top: 60px;
+   height:min-content;
+   width: max-content;
+   margin-left: 0px;
+margin-left: 30px;
+}
+.AB2 p{
+   height:min-content;
+   font-size:21px;
+   color:#cea5fb;
+   font-family: 'Fira Mono', monospace;
+   font-weight: bold;
+}
+.img1 .img{
+   height:360px;
+ 
+   border-style: solid;
+   border-width: 2px;
+   border-radius: 15px;
+   padding: 20px;
+   border-color: #000000;
+    box-shadow: 15px 10px 5px 1px #000000;
+
+}
+.headings{
+   color:#77bdfb;
+   height: min-content;
+   margin: 0px;
+   font-size:80px;
+   font-family: 'PT Mono', monospace;
+   font-weight: bolder;
+   
+}
+/*        DIV III  ###########################################################################    */
+#SKILLS{
+   margin-top: 50px;
+   padding-left:50px;
+   
+}
+.SK{
+   padding-left: 140px;
+}
+#SK1{
+   display: flex;
+   padding-left:60px;
+   padding-top: 100px;
+   justify-content: space-evenly;
+}
+#SK2{
+   display: flex;
+   padding-left:60px;
+   padding-top: 100px;
+   margin-bottom:100px;
+   justify-content: space-evenly;
+}
+
+.logo{
+   padding-left: 50px;
+   padding-right: 50px;
+   padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.TECH:hover{
+   transform: scale(1.06); 
+   transition: 0.5s;
+}
+
+.container {
+   width: max-content;
+   height: min-content;
+   display: grid;
+   background-color: #21262d;
+   border-width: 2px;
+   border-style: solid;
+   border-color: #000000;
+  border-radius: 10px;
+ align-items: center;
+}
+.TECH1{
+   height:fit-content;
+  font-size:20px;
+   color:#cea5fb;
+   font-family:  monospace;
+   font-weight: bold;
+   position: absolute;
+   
+   padding-top: 1%;
+   opacity: 0;
+   transition: 0.25s;
+}
+.TECH1 p{
+ 
+    padding-left: 10px;
+}
+.container:hover .TECH1{
+   opacity: 1;
+   transition: 0.5s;
+}
+.container:hover .TECH{
+   opacity: 0.08;
+   transform: rotate(360deg);
+   transition: 0.5s;
+}
+.container:hover {
+  
+   background-color: #21262d;
+   border-width: 3.5px;
+   border-style: solid;
+   border-radius:12px;
+   border-color: #505252;
+   transition: 0.6s;
+   box-shadow: 15px 10px 5px 1px #000000;
+}
+   /**************************************************************************************/
+#PROJECT{
+   padding-top: 150px;
+   padding-left:50px;
+}
+   .PR{
+     padding-left: 140px;
+   }
