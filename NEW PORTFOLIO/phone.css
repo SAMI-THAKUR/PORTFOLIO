@@ -1,4 +1,4 @@
-@media screen and (max-width:850px){
+@media screen and (max-width:650px){
     body{
       
     }
@@ -11,20 +11,39 @@
 
 .list {
    width: 90%;
-   height: 90vh;
+   height: 100vh;
    background-color: #AEE2FF;
-   
    text-align: center;
    display: flex;
    flex-direction: column;
+   z-index: 1;
    position: fixed;
-   top: 2rem;
+   top: 40px;
    left: 100%;
    transition: all 1s;
    
 }
+.list button{
+   display: block;
+}
+.list button {
+   color: #090909;
+   font-size: 11px;
+   border-radius: 10px;
+   background: #62CDFF;
+   font-family: 'Fira Mono', monospace;
+   font-weight: 800;
+   transition: all .3s;
+ } 
+ .list button:hover {
+  color: #62CDFF;
+  background: #06283D;
+   border: 1px solid #2192FF;
+   transform: translateY(-5px);
+   transition:0.4s;
+ }
 .list li{
-   padding:10px;
+   padding:20px;
 }
 #check {
    display: none;
@@ -40,8 +59,23 @@
    color: #010A43;
    line-height: 90px;
 }
+.left h1{
+   font-size: 4.3vw;
+   font-family: 'Fira Mono', monospace;  
+}
 #check:checked~ul {
    left: 0%;
+}
+.right ul li a {
+   padding: 3.3vw 4.7vw;
+   padding-left: 1.5vw;
+   padding-right: 1.5vw;
+   font-size: 17px;
+   color: #010A43;;
+   font-family: 'Fredoka One',cursive;
+   cursor: pointer;
+   text-decoration: none;
+   transition: all 0.2s;
 }
 .right ul li a:hover{
    border-radius: 0px;
@@ -52,13 +86,19 @@
 .right ul li a:hover~ul{
    left: 0%;
 }
+.right ul li a:hover {
+   border-style: none;
+   border-color: #010A43;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 0px #00d0fa ;  
+ }
 
 /**********************************************************************/
    #INTRO{
     display: grid;
-    height: 550px;
-    padding-left:2px;
-    padding-top: 40px;
+    height: 100vw;
+    padding-left:13.9vw;
+    padding-top: 6.15vw;
    
    }
    .vertical-menu {
@@ -72,18 +112,19 @@
    .pre{  /* the  first para of site */
       display: grid;
       width:max-content;
+      justify-content: space-around;
       height: min-content;
-      margin-left:55px;
-      margin-top:100px;
+      margin-left:3vw;
+      margin-top:15.4vw;
      }
      h3{ /* my name is */
-   font-size:20px;
+   font-size:3.7vw;
 }
    h1{  /* NAME main*/
-   font-size:70px;
+   font-size:12.8vw;
 }
    .myself{  /* basic info */
-   font-size: 20px;
+   font-size: 3.7vw;
 }
 br{
     display: none;
@@ -100,50 +141,83 @@ opacity: 0;
     width: min-content;
  }
  .p{
-    width: 330;
+    width: 69vw;
+ }
+ #RESUME{
+   padding-top: 9.2vw;
+}
+ button {
+   font-size: 3.2vw;
+   color: #2192FF;
+   text-transform: uppercase;
+   padding: 1.5vw 3vw;
+   border-radius: 10px;
+   border: 2px solid #2192FF;
+   background: #010A43 ;
+   box-shadow: 3px 3px #2192FF;
+   cursor: pointer;
+   margin: 10px 0;
  }
 
+ button:active {
+   box-shadow: none;
+   transform: translate(3px, 3px);
+ }
 
  /*******************************************************************************************/
  #AB{
     display: grid;
-  
-   padding-left:15px;
+    justify-content:inherit;
+   padding-left:0px;
    margin-bottom:50px;
  }
  .ABOUT{
 grid-row: 2;
  }
  .AB1{
-    margin-top: 120px;
-    margin-left: 40px;
+    margin-top: 18.46vw;
+    margin-left: 10.8vw;
  
  }
  .AB2{
-    width: 330px;
-    margin-left: 0px;
-    margin-left: 20px;
+    width: 65vw;
+    margin-left: 14.98vw;
  }
- .br{
+ .AB2 br{
     display: none;
  }
- .AB2 p{
-   font-size:20px;
+ .AB2{
+   display: flex;
+  flex-wrap: wrap;
+  font-size:3vw;
+  padding: 2.5vw;
    }
- .img1{
-    margin-left:10px;
-    grid-row: 1;
- }
+
  .headings{
     margin: 0px;
-    font-size:70px;
+    font-size:10.69vw;
   }
   .img1{
-   height:min-content;
-   width: min-content;
-   margin-top:110px;
+   grid-row: 1;
+   height: 260px;
+   width: 290px;
+   margin-top:3vw;
    margin-bottom:30px;
-   margin-left:0px;
+   margin-left:18vw;
+}
+.img1 img{
+   height: 45.4vw;
+   width: 45.4vw;
+}
+.img1 .img{
+   height:46vw;
+   width:max-content;
+   border-style: solid;
+   border-width: 2px;
+   border-radius: 15px;
+   padding: 20px;
+   border-color: #010A43;
+   box-shadow: 10px 5px 5px 1px #06283D;
 }
 
   /*******************************************************************************/
@@ -155,26 +229,19 @@ grid-row: 2;
    padding-left: 50px;
 }
  #SK1{
-    display: grid;
+   display: flex;
+   flex-wrap: wrap;
     padding-left:5px;
     padding-top: 100px;
 }
 #SK2{
-   display: grid;
+   display: flex;
+   flex-wrap: wrap;
    padding-left:5px;
-   padding-top: 10px;
 }
- 
- 
  .logo{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 50px;
-   
+ padding: 30px;
  }
- 
-
- 
  .container {
    width: min-content;
    height: min-content;
@@ -184,53 +251,266 @@ grid-row: 2;
    border-style: solid;
    border-color: #2192FF;
   border-radius: 10px;
-  
    align-items: center;
    margin-bottom:19px;
-   box-shadow: 12px 9px 3px 1px #00d0fa;
-
-}
-.TECH1{
-   height:min-content;
-  font-size:20px;
-   color:#010A43;
-   font-family:  monospace;
-   font-weight: bold;
-   position: inherit;
-   padding-left: 5px;
-   padding-right: 5px;
-   padding-top: 0%;
-   opacity: 1;
-   transition: 0.25s;
-}
-
-.container:hover .TECH1{
-   opacity: 1;
-   transition: 0s;
-}
-.container:hover .TECH{
-   opacity: 1;
-   transition: 0s;
-}
-.TECH:hover{
-   transform: scale(1); 
-   transition: 0s;
+   box-shadow: 12px 9px #2192FF;
 }
 .container:hover {
-  
    background-color: #AEE2FF;
    border-width: 2px;
    border-style: solid;
    border-color: #2192FF;
   border-radius: 10px;
-  
    transition: 0s;
-   box-shadow: 12px 9px 3px 1px #00d0fa;
-
+   box-shadow: 12px 9px #2192FF;
 }
 
  /********************************************************************************/
  .PR{
    padding-left: 10px;
 }
+.PR2{
+   padding-left: 1vw;
+   padding-top: 3.38vw;
+}
+.pcontainer{
+  padding-top:5.38vw; 
+  padding-left:2.9vw;  
+}
+.pcontainer .head{
+   color:#62CDFF;
+  height: min-content;
+  margin: 0px;
+  font-size:4.5vw;
+  font-family:  monospace;
+  text-decoration: none;
+  padding-bottom: 0.77vw; 
+}
+.p .para{
+  height: fit-content;
+  width: fit-content;
+  padding: 1.4vw;
+ font-size:3vw;
+ border-radius:0.39vw; 
+}
+.p h2{
+height: min-content;
+font-size:18px;
+}
+/*******************************************************************************/
+.pcontainerR{
+   padding:9.69vw; 
+}
+.pcontainerR .pR{
+   padding-left:0px;
+}
+.pcontainerR .headR{
+      font-size:4.5vw;
+      padding-bottom:0.77vw;
+}
+.workR{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column-reverse;
+   justify-content: space-evenly;
+}
+.workR .imgR{
+   padding: 1.54vw;
+   border-style: solid;
+   border-color: #010A43;
+   border-radius:10px;
+   margin-top: 30px;
+ }
+ .workR img{
+   height:26.9vw;
+   width: 50.6vw;
+ }
+ .workR .imgR i{
+   padding-top:1.53vw;
+ }
+.pR .workR .textR .cont{
+   height: max-content;
+   width: fit-content;
+   padding: 2.53vw;
+   font-size:3.1vw;
+}
+.pR h2{
+color:#06283D;
+font-size:18px;
+font-family: 'PT Mono', monospace;
+font-weight: bolder;
+}
+.iconsR{
+   display: flex;
+   
+}
+.iconsR i{
+   padding-right: 20px;
+   font-size:30px;
+}
+   /*------------------------------------------------------------*/
+   .pcontainerL{
+      padding:9.69vw; 
+   }
+   .pcontainerL .headL{
+      height: min-content;
+      margin: 0px;
+      font-size:4.5vw;
+      font-family:  monospace;
+      text-decoration: none;
+      padding-bottom:0.77vw;
+    
+   }
+   .workL{
+      display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: space-evenly;   
+   }
+ .workL .imgL{
+   padding: 1.54vw;
+   border-style: solid;
+   border-color: #010A43;
+   border-radius:10px;
+   margin-top: 30px;
+ }
+ .workL img{
+   height:26.9vw;
+   width: 50.6vw;
+}
+ .workL .imgL i{
+   padding-top:1.53vw;
+ }
+   .pL .workL .textL .cont{
+      height: max-content;
+      width: fit-content;
+      padding: 2.53vw;
+      font-size:3.1vw;
+   }
+   .iconsL{
+      display: flex;
+    
+   }
+   .iconsL i{
+      padding-right: 20px;
+      font-size: 30px;
+   }
+   .pL h2{
+      height: min-content;
+      font-size:18px;
+      font-family: 'PT Mono', monospace;
+      font-weight: bolder;
+      }
+   .github{
+      display:flex;
+   }
+   .github i{
+      padding-right: 20px;
+      font-size: 30px;
+   }
+/***********************************************************************/
+   .CO2{
+      height: max-content;
+      width: 80vw;
+      margin-top: 7.69vw;
+      padding: 3.1vw;
+      font-size:3.5vw;
+      color:#06283D;
+      font-family: 'Fira Mono', monospace;
+   }
+   .CO2 i{
+      font-size:5.4vw;
+      color: #2192FF;
+   }
+   .CO2 h2{
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 500;
+      font-size: 3vw;
+   }
+   .END h2{
+      font-size: 3.3vw;
+      font-family: 'Charm', cursive;
+      margin-top:10.85vw;
+      color:#371B58;
+   }
+   .END span{
+      font-family: 'Fira Mono', monospace;  
+      color:#371B58;
+   }
+br{
+   display: block;
+} 
+.contact-form {
+   background-color: #bee5fa;
+   padding: 20px;
+   border-radius: 10px;
+   text-align: left;
+   display:block;
+   border: 3px solid #06283D;
+   box-shadow: 9px 9px #2192FF;
+ }
+.contact-form label {
+   color: black;
+ }
+ .contact-form form {
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ .contact-form label {
+   margin-bottom: 10px;
+   font-family: 'PT Mono', monospace;
+ }
+ 
+ textarea {
+   resize: none;
+   height: 80px;
+   width: 70vw;
+ }
+ 
+ .contact-form input, .contact-form textarea {
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   border-style: solid;
+   border-color: #1D1CE5;
+   margin-bottom: 20px;
+   background-color: transparent;
+ }
+ .contact-form input:focus, .contact-form textarea:focus{
+   border-radius: 5px;
+   border-style: solid;
+   border-color: #090909;
+   background-color: #DDE6ED;
+ } 
+
+.END h2{
+   display: none;
+   font-size: 3.9vw;
+   font-family: 'Fira Mono', monospace;
+   margin-top:30px;
+   color:#06283D;  
+} 
+/*************************************************/
+.ENDt{
+   display: block;
+   font-size: 2.9vw;
+   font-family: 'Fira Mono', monospace;
+   margin-top:5.5vw;
+   padding: 20px; 
+   color:#DDE6ED;
+ }
+ .ENDt h3{
+ font-size:2.9vw;
+ }
+ .ENDt .iconst{
+   display: block;
+   padding-top: 20px;
+  
+ }
+ .iconst i{
+   font-size: 25px;
+   padding: 10px;
+   color: #2192FF;
+ } 
 }

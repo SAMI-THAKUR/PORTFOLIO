@@ -1,0 +1,535 @@
+@media screen and (max-width:1250px) and (min-width:650px){
+    html {
+      scroll-behavior:smooth;
+    }
+    #menu {
+      background-color:#21262d;
+     display: flex;
+     line-height: 5px;
+   }
+   
+   .list {
+     width: 90%;
+     height: 100vh;
+     text-align: center;
+     background-color: #21262d;
+     display: flex;
+     flex-direction: column;
+     z-index: 1;
+     position: fixed;
+     top: 30px;
+     left: 100%;
+     transition: all 1s;
+     
+   }
+   .list button{
+     display: block;
+   }
+   .list button {
+     color: #090909;
+     font-size: 11px;
+     border-radius: 10px;
+     font-family: 'Fira Mono', monospace;
+     font-weight: 800;
+     transition: all .3s;
+   } 
+   .list button:hover {
+    background: #AEE2FF;
+     transform: translateY(-5px);
+     transition:0.4s;
+   }
+   .list li{
+     padding:20px;
+   }
+   #check {
+     display: none;
+   }
+   
+   .checkBtn {
+     display: block;
+   }
+   .checkBtn {
+     cursor: pointer;
+     font-size: 30px;
+     float: right;
+     color: #DDE6ED;
+     line-height: 90px;
+   }
+   .left h1{
+     font-size: 2.3vw;
+     font-family: 'Fira Mono', monospace;  
+   }
+   #check:checked~ul {
+     left: 0%;
+   }
+   .right ul li a {
+     padding: 3.3vw 4.7vw;
+     padding-left: 1.5vw;
+     padding-right: 1.5vw;
+     font-size: 17px;
+     font-family: 'Fredoka One',cursive;
+     cursor: pointer;
+     text-decoration: none;
+     transition: all 0.2s;
+   }
+   .right ul li a:hover{
+     border-radius: 0px;
+     border-style: none;
+     background-color: #21262d;
+     color: #DDE6ED;
+   }
+   .right ul li a:hover~ul{
+     left: 0%;
+   }
+   .right ul li a:hover {
+     border-style: none;
+      border-radius: 10px;
+   }
+   
+   
+   
+     
+    
+     /*          DIV II          ##################################################################                */
+   
+     #INTRO{
+      display: grid;
+      width: max-content;
+      height: 45.8vw;
+      padding-left:40px;
+      padding-top: 70px;
+      padding-bottom: 70px;
+     }
+     .INTRO1{
+      display: flex;
+      
+     }
+     /* removing side list */
+     .vertical-menu {
+      padding-right: 0px;
+      padding-top: 0px;
+      padding-top: 0px;
+     }
+   .socials{
+      display: none ;
+   }
+       .pre{  /* the  first para of site */
+         display: grid;
+         width:105.6vw;
+         height: 23.7vw;
+         margin-left:12.25vw;
+         margin-top:6.85vw;
+        }
+       
+     
+     h3{ /* my name is */
+      margin:0px;
+      font-size:1.6vw;
+      font-family: 'Fira Mono', monospace;
+     height:min-content;
+     padding-left:10px;
+   
+     }
+     h1{  /* NAME main*/
+     
+      /* width:max-content; */
+      height: min-content;
+      margin: 0px;
+      font-size:5.6vw;
+      font-family: 'Patua One', cursive;
+      font-weight: bolder;
+   }
+     .myself{  /* basic info */
+      height:min-content;
+      font-size: 1.6vw;
+      font-family: 'Fira Mono', monospace;
+      font-style: oblique;
+      font-weight: bold;
+      
+      
+   }
+   button {
+     font-family: 'Bungee', cursive;
+    font-size: 2vw;
+    text-transform: uppercase;
+    padding: 0.83vw 1.7vw;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  
+  button:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+  }
+   #RESUME{
+      padding-top: 5vw;
+   }
+   
+   .hr2{
+      width: 69%;
+        border-style: none;
+        border-top-style: solid;
+        border-bottom-style:solid;
+        border-top-width: 2px;
+        border-bottom-width: 2px;
+     
+   }
+   
+   a{  /*  VESIT link */
+      text-decoration: none;
+   }
+ 
+        
+  /*     DIV III     ###########################################################################################    */
+  #AB{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:4vw;
+    padding-left:2vw;
+    margin-bottom:8.4vw;
+  }
+  
+  .AB1{
+   margin-top: 10vw;
+   margin-left: 0px;
+  }
+  .AB2{
+     margin-top: 5vw;
+     height:min-content;
+     width: max-content;
+     margin-left: 0px;
+  }
+  .AB2 p{
+     width: fit-content;
+     height:min-content;
+     font-size:1.8vw;
+     font-family: 'Fira Mono', monospace;
+     font-weight: bold;
+  }
+  .img1{
+     height:min-content;
+     width: min-content;
+     margin-top:21.5vw;
+     margin-bottom:25vw;
+     margin-left:0px;
+     margin-right: 0vw;
+   }
+  .img1 .img{
+     height:25vw;
+     border-style: solid;
+     border-width: 2px;
+     border-radius: 1.25vw;
+     padding: 1.6vw;
+  }
+  .img img{
+    height: 24.2vw;
+    width: 24.2vw;
+  }
+  
+  
+  
+  .headings{
+     height: min-content;
+     margin: 0px;
+     font-size:6.7vw;
+     font-family: 'PT Mono', monospace;
+     font-weight: bolder;
+  }
+  /*        DIV III  ###########################################################################    */
+  #SKILLS{
+     padding-top: 50px;
+     padding-left:9px;
+  }
+  .SK{
+    padding-left: 50px;
+  }
+  #SK1{
+     display: flex;
+     padding-left:5px;
+     padding-top: 100px;
+     flex-wrap: wrap;
+  }
+  #SK2{
+    display: flex;
+    padding-left:5px;
+    padding-top: 10px;
+    flex-wrap: wrap;
+  }
+  .logo{
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-top: 50px; 
+  }
+  .container {
+    width: min-content;
+    height: min-content;
+    display: grid;
+    border-style: solid;
+    align-items: center;
+    margin-bottom:19px;
+  }
+  .container:hover {
+    border-width: 2px;
+    border-style: solid;
+    transition: 0s;
+  }
+   /**************************************************************************************/
+      /*------------------------------------------------------------*/
+     /* PROJECT SECTION 
+     * id --> PROJECT-->PR--> heading
+     *               -->PR2-->pcontainer-->p-->work-->img
+                                                   -->text
+     */
+     #PROJECT{
+        padding-top: 11.5vw;
+        padding-left:3.84vw;
+     }
+        .PR{
+          padding-left: 10.77vw;
+        }
+     
+        .PR2{
+            padding-left: 10vw;
+            padding-top: 5.38vw;
+        }
+        .pcontainer{
+           padding-top:5.38vw; 
+           padding-left: 1.3vw; 
+        }
+        .pcontainer .head{
+           height: min-content;
+           margin: 0px;
+           font-size:3.7vw;
+           font-family:  monospace;
+           text-decoration: none;
+           padding-bottom: 0.77vw; 
+        }
+        .p .para{
+           height: fit-content;
+           width: fit-content;
+           padding: 1.4vw;
+          font-size:1.6vw;
+          border-radius:0.39vw; 
+        }
+        .p h2{
+        height: min-content;
+        font-size:1.4vw;
+        }
+       
+       /*88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+        .pcontainerR{
+           padding:7.69vw; 
+        }
+        .pcontainerR .pR{
+           padding-left:0px;
+        }
+        .pcontainerR .headR{
+              height: min-content;
+              margin: 0px;
+              font-size:2.7vw;
+              font-family:  monospace;
+              text-decoration: none;
+              padding-bottom:0.77vw;
+         
+        }
+        .workR{
+           display: flex;
+           flex-wrap: wrap;
+           flex-direction: column-reverse;
+           justify-content: space-evenly;
+          
+        }
+        .workR .imgR{
+           padding: 1.54vw;
+           border-style: solid;
+           border-radius:10px;
+           margin-top: 30px;
+         }
+         .workR img{
+           height:26.9vw;
+           width: 50.6vw;
+         }
+         .workR .imgR i{
+           padding-top:1.53vw;
+           font-size:4vw;
+         }
+        .pR .workR .textR .cont{
+           height: max-content;
+           width: max-content;
+           padding: 1.53vw;
+           font-size:2.1vw;
+        }
+        .pR h2{
+        height: min-content;
+        font-size:18px;
+        font-family: 'PT Mono', monospace;
+        font-weight: bolder;
+        }
+        .iconsR{
+           display: flex;
+           
+        }
+        .iconsR i{
+           padding-right: 20px;
+           font-size:30px;
+        }
+           /*------------------------------------------------------------*/
+           .pcontainerL{
+              padding:7.69vw; 
+           }
+           .pcontainerL .headL{
+              height: min-content;
+              margin: 0px;
+              font-size:2.7vw;
+              font-family:  monospace;
+              text-decoration: none;
+              padding-bottom:0.77vw;
+            
+           }
+           .workL{
+              display: flex;
+           flex-wrap: wrap;
+           flex-direction: column;
+           justify-content: space-evenly;   
+           }
+         .workL .imgL{
+           padding: 1.54vw;
+           border-style: solid;
+           border-radius:10px;
+           margin-top: 30px;
+         }
+         .workL img{
+           height:26.9vw;
+           width: 50.6vw;
+        }
+         .workL .imgL i{
+           padding-top:1.53vw;
+         }
+           .pL .workL .textL .cont{
+              height: max-content;
+              width: max-content;
+              padding: 1.53vw;
+              font-size:2.1vw;
+           }
+           .iconsL{
+              display: flex;
+            
+           }
+           .iconsL i{
+              padding-right: 20px;
+              font-size: 30px;
+           }
+           .pL h2{
+              height: min-content;
+              font-size:1.2vw;
+              font-family: 'PT Mono', monospace;
+              font-weight: bolder;
+              }
+           .github{
+              display:flex;
+           }
+           .github i{
+              padding-right: 20px;
+              font-size: 30px;
+           }
+  
+  
+  /***************************************************************************/
+  .CO{
+   padding-top: 200px;
+  }
+  .CO2{
+   
+   height: max-content;
+   width: max-content;
+   margin-top: 50px;
+   padding: 20px;
+   font-size:19px;
+   font-family: 'Fira Mono', monospace;
+}
+.CO2 i{
+   font-size:35px;
+}
+.CO2 h2{
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: 500;
+   font-size: 20px;
+}
+.END h2{
+   font-size: 3.3vw;
+   font-family: 'Charm', cursive;
+   margin-top:90px;
+}
+.END span{
+   font-family: 'Fira Mono', monospace;  
+}
+.contact-form {
+   padding: 1.67vw;
+   border-radius: 10px;
+   text-align: left;
+   display:block;
+ }
+.contact-form label {
+ }
+ .contact-form form {
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ .contact-form label {
+   margin-bottom: 10px;
+   font-family: 'PT Mono', monospace;
+ }
+ 
+ textarea {
+   resize: none;
+   height: 80px;
+   width: 41.67vw;
+ }
+ 
+ .contact-form input, .contact-form textarea {
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   border-style: solid;
+   margin-bottom: 20px;
+   background-color: transparent;
+ }
+ .contact-form input:focus, .contact-form textarea:focus{
+   border-radius: 0.4vw;
+   border-style: solid;
+ } 
+.END h2{
+  display: none;
+   font-size: 2.9vw;
+   font-family: 'Fira Mono', monospace;
+   margin-top:2.5vw; 
+}
+/***************************************************************************/
+.ENDt{
+  display: block;
+  font-size: 1.9vw;
+  font-family: 'Fira Mono', monospace;
+  margin-top:5.5vw;
+  color:#090909; 
+  padding: 20px; 
+}
+.ENDt h3{
+color: #8294C4;
+font-size: 2.5vw;
+}
+.ENDt .iconst{
+  display: block;
+  padding-top: 20px;
+}
+.iconst i{
+  color: #8294C4;
+  font-size: 30px;
+  padding: 10px;
+}
+}
+  
+  /***************************************************************************/
+  
+  

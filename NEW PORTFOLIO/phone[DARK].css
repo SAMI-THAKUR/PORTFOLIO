@@ -1,0 +1,483 @@
+@media screen and (max-width:650px){
+   body{
+     
+   }
+
+#menu {
+   background-color:#21262d;
+  display: flex;
+  line-height: 5px;
+}
+
+.list {
+  width: 90%;
+  height: 100vh;
+  text-align: center;
+  background-color: #21262d;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: fixed;
+  top: 40px;
+  left: 100%;
+  transition: all 1s;
+  
+}
+.list button{
+  display: block;
+}
+.list button {
+  color: #090909;
+  font-size: 11px;
+  border-radius: 10px;
+  font-family: 'Fira Mono', monospace;
+  font-weight: 800;
+  transition: all .3s;
+} 
+.list button:hover {
+ background: #AEE2FF;
+  transform: translateY(-5px);
+  transition:0.4s;
+}
+.list li{
+  padding:20px;
+}
+#check {
+  display: none;
+}
+
+.checkBtn {
+  display: block;
+}
+.checkBtn {
+  cursor: pointer;
+  font-size: 30px;
+  float: right;
+  color: #DDE6ED;
+  line-height: 90px;
+}
+.left h1{
+  font-size: 4.3vw;
+  font-family: 'Fira Mono', monospace;  
+}
+#check:checked~ul {
+  left: 0%;
+}
+.right ul li a {
+  padding: 3.3vw 4.7vw;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  font-size: 17px;
+  font-family: 'Fredoka One',cursive;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.right ul li a:hover{
+  border-radius: 0px;
+  border-style: none;
+  background-color: #21262d;
+  color: #DDE6ED;
+}
+.right ul li a:hover~ul{
+  left: 0%;
+}
+.right ul li a:hover {
+  border-style: none;
+   border-radius: 10px;
+}
+
+/**********************************************************************/
+  #INTRO{
+   display: grid;
+   height: 100vw;
+   padding-left:13.9vw;
+   padding-top: 6.15vw;
+  
+  }
+  .vertical-menu {
+     padding-right: 0px;
+     padding-top: 0px;
+     padding-top: 0px;
+    }
+  .socials{
+     display: none ;
+  }
+  .pre{  /* the  first para of site */
+     display: grid;
+     width:max-content;
+     justify-content: space-around;
+     height: min-content;
+     margin-left:3vw;
+     margin-top:15.4vw;
+    }
+    h3{ /* my name is */
+  font-size:3.7vw;
+}
+  h1{  /* NAME main*/
+  font-size:12.8vw;
+}
+  .myself{  /* basic info */
+  font-size: 3.7vw;
+}
+br{
+   display: none;
+}
+#RESUME{
+   padding-top: 40px;
+   
+}
+
+.hr2{
+opacity: 0;
+}
+.name{
+   width: min-content;
+}
+.p{
+   width: 69vw;
+}
+#RESUME{
+  padding-top: 9.2vw;
+}
+button {
+ font-family: 'Fira Mono', monospace;;
+  font-size: 3.2vw;
+  text-transform: uppercase;
+  padding: 1.5vw 3vw;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+/*******************************************************************************************/
+#AB{
+   display: grid;
+   justify-content:inherit;
+  padding-left:0px;
+  margin-bottom:50px;
+}
+.ABOUT{
+grid-row: 2;
+}
+.AB1{
+   margin-top: 18.46vw;
+   margin-left: 10.8vw;
+}
+.AB2 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size:3vw;
+  padding: 2.5vw;
+  width: 69vw;
+  margin-left: 14.98vw;
+  }
+  .AB2 br{
+    display: none;
+ }
+.headings{
+   margin: 0px;
+   font-size:10.69vw;
+ }
+ .img1{
+  grid-row: 1;
+  height: 260px;
+  width: 290px;
+  margin-top:3vw;
+  margin-bottom:30px;
+  margin-left:18vw;
+}
+.img1 img{
+  height: 45.4vw;
+  width: 45.4vw;
+}
+.img1 .img{
+  height:46vw;
+  width:max-content;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+ /*******************************************************************************/
+ #SKILLS{
+   padding-top: 50px;
+   padding-left:9px;
+}
+.SK{
+  padding-left: 50px;
+}
+#SK1{
+  display: flex;
+   flex-wrap: wrap;
+   padding-left:5px;
+   padding-top: 100px;
+}
+#SK2{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left:5px;
+}
+.logo{
+ padding:20px;
+}
+.container {
+  width: min-content;
+  height: min-content;
+  display: grid;
+  border-width: 2px;
+  border-style: solid;
+ border-radius: 10px;
+  align-items: center;
+  margin-bottom:19px;
+}
+.container:hover {
+  border-width: 2px;
+  border-style: solid;
+ border-radius: 10px;
+  transition: 0s;
+}
+
+/********************************************************************************/
+.PR{
+  padding-left: 10px;
+}
+.PR2{
+  padding-left: 1vw;
+  padding-top: 3.38vw;
+}
+.pcontainer{
+ padding-top:5.38vw; 
+ padding-right:3.5vw; 
+ padding:9.69vw; 
+}
+.pcontainer .head{
+ height: min-content;
+ margin: 0px;
+ font-size:4.5vw;
+ font-family:  monospace;
+ text-decoration: none;
+ padding-bottom: 0.77vw; 
+}
+.p .para{
+ height: fit-content;
+ width: fit-content;
+ font-family: 'Fira Mono', monospace;;
+ padding: 1.4vw;
+font-size:3vw;
+border-radius:0.39vw;
+}
+.p h2{
+height: min-content;
+font-size:18px;
+}
+/*******************************************************************************/
+.pcontainerR{
+  padding:9.69vw; 
+}
+.pcontainerR .pR{
+  padding-left:0px;
+}
+.pcontainerR .headR{
+     font-size:4.5vw;
+     padding-bottom:0.77vw;
+}
+.workR{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+}
+.workR .imgR{
+  padding: 1.54vw;
+  border-style: solid;
+  border-radius:10px;
+  margin-top: 30px;
+}
+.workR img{
+  height:26.9vw;
+  width: 50.6vw;
+}
+.workR .imgR i{
+  padding-top:1.53vw;
+}
+.pR .workR .textR .cont{
+  height: max-content;
+  width: fit-content;
+  font-family: 'Fira Mono', monospace;;
+  padding: 2.53vw;
+  font-size:3.1vw;
+}
+.pR h2{
+font-size:18px;
+font-family: 'PT Mono', monospace;
+font-weight: bolder;
+}
+.iconsR{
+  display: flex;
+  
+}
+.iconsR i{
+  padding-right: 20px;
+  font-size:30px;
+}
+  /*------------------------------------------------------------*/
+  .pcontainerL{
+     padding:9.69vw; 
+  }
+  .pcontainerL .headL{
+     height: min-content;
+     margin: 0px;
+     font-size:4.5vw;
+     font-family:  monospace;
+     text-decoration: none;
+     padding-bottom:0.77vw;
+   
+  }
+  .workL{
+     display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;   
+  }
+.workL .imgL{
+  padding: 1.54vw;
+  border-style: solid;
+  border-radius:10px;
+  margin-top: 30px;
+}
+.workL img{
+  height:26.9vw;
+  width: 50.6vw;
+}
+.workL .imgL i{
+  padding-top:1.53vw;
+}
+  .pL .workL .textL .cont{
+     height: max-content;
+     width: fit-content;
+     font-family: 'Fira Mono', monospace;;
+     padding: 2.53vw;
+     font-size:3.1vw;
+  }
+  .iconsL{
+     display: flex;
+   
+  }
+  .iconsL i{
+     padding-right: 20px;
+     font-size: 30px;
+  }
+  .pL h2{
+     height: min-content;
+     font-size:18px;
+     font-family: 'PT Mono', monospace;
+     font-weight: bolder;
+     }
+  .github{
+     display:flex;
+  }
+  .github i{
+     padding-right: 20px;
+     font-size: 30px;
+  }
+/***********************************************************************/
+.CO2{
+  height: max-content;
+  width: 80vw;
+  margin-top: 7.69vw;
+  padding: 3.1vw;
+  font-size:2.5vw;
+  font-family: 'Fira Mono', monospace;
+}
+.CO2 i{
+  font-size:5.4vw;
+}
+.CO2 h2{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 3vw;
+}
+.END h2{
+  font-size: 3.3vw;
+  font-family: 'Charm', cursive;
+  margin-top:10.85vw;
+}
+.END span{
+  font-family: 'Fira Mono', monospace;  
+}
+br{
+display: block;
+} 
+.contact-form {
+padding: 20px;
+border-radius: 10px;
+text-align: left;
+display:block;
+}
+.contact-form label {
+}
+.contact-form form {
+display: flex;
+flex-direction: column;
+}
+
+.contact-form label {
+margin-bottom: 10px;
+font-family: 'PT Mono', monospace;
+}
+
+textarea {
+resize: none;
+height: 80px;
+width: 70vw;
+}
+
+.contact-form input, .contact-form textarea {
+padding: 10px;
+border: none;
+border-radius: 5px;
+border-style: solid;
+margin-bottom: 20px;
+background-color: transparent;
+}
+.contact-form input:focus, .contact-form textarea:focus{
+border-radius: 5px;
+border-style: solid;
+} 
+
+.END h2{
+  display: none;
+font-size: 3.9vw;
+font-family: 'Fira Mono', monospace;
+margin-top:30px;
+}
+/*****************************************************************/
+.ENDt{
+  display: block;
+  font-size: 2.9vw;
+  font-family: 'Fira Mono', monospace;
+  margin-top:5.5vw;
+  color:#090909; 
+  padding: 20px; 
+}
+.ENDt h3{
+color: #8294C4;
+font-size:2.9vw;
+}
+.ENDt .iconst{
+  display: block;
+  padding-top: 20px;
+}
+.iconst i{
+  color: #8294C4;
+  font-size: 25px;
+  padding: 10px;
+}
+}

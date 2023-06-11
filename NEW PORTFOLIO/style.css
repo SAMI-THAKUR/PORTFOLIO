@@ -1,0 +1,637 @@
+
+   
+
+/* break point - 1500px*/
+html {
+   scroll-behavior:smooth;
+ }
+   body{   /* main body of html*/
+      cursor: pointer;
+      background-repeat:no-repeat;
+      background-size: 100% 100%;
+      background-color:#AEE2FF;
+      background-attachment: scroll;
+  }
+ 
+
+.navbar {
+  background-color: #AEE2FF;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   line-height: 2.5vw;
+  position: fixed;
+ z-index:1;
+  width: 99%;
+  border-radius:10px;
+  border-style: solid;
+  border-color: #010A43;
+  opacity:1;
+}
+
+.left h1{
+   font-size: 2.3vw;
+   font-family: 'Fira Mono', monospace;  
+}
+.checkBtn {
+   display: none;
+}
+
+#check {
+   display: none;
+}
+.list button{
+   display: none;
+}
+.checkBtn {
+   cursor: pointer;
+   font-size: 30px;
+   float: right;
+   color: #010A43;
+   line-height: 80px;
+}
+
+.right ul {
+   display: flex;
+   list-style: none;
+}
+
+.right ul li a {
+   padding: 15px 24px;
+   padding-left: 1.5vw;
+   padding-right: 1.5vw;
+   font-size: 1.2vw;
+   color: #010A43;
+   font-family: 'Fredoka One',cursive;
+   cursor: pointer;
+   text-decoration: none;
+   transition: all 0.2s;
+}
+
+.right ul li a:hover {
+  
+  border-color: #010A43;
+   border-radius: 10px;
+   border-style: solid;
+   box-shadow: 2px 1px 3px 1px #2192FF; ; 
+}
+/*dark/light button*/
+.socials button {
+    color: #010A43;
+    font-size: 11px;
+    border-radius: 10px;
+    background: #AEE2FF;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 800;
+    transition: all .3s;
+  } 
+  .socials button:hover {
+   color: #DDE6ED;
+   background: #474E68;
+    border: 1px solid #090909;
+    box-shadow: 2px 1px 1px 1px #090909; 
+    transform: translateY(-5px);
+    transition:0.4s;
+  }
+
+/*********************************************************/
+
+
+
+
+  
+ 
+  /*          DIV II          ##################################################################                */
+
+  #INTRO{
+   display: grid;
+   width: max-content;
+   height: 550px;
+   padding-left:40px;
+   padding-top: 80px;
+  }
+  .INTRO1{
+   display: flex;
+   
+  }
+  .socials{
+   position: fixed;
+   z-index: 1;
+  }
+
+  .vertical-menu {
+   padding-right: 50px;
+   padding-top: 70px;
+  }
+  .vertical-menu a {
+   background-color: transparent; /* Grey background color */
+   display: block; /* Make the links appear below each other */
+   padding-top: 30px;
+   text-decoration: none; /* Remove underline from links */
+ }
+ .vertical-menu a i{
+   color:#62CDFF;
+   font-size:33px;
+  
+ }
+ .vertical-menu a i:hover{
+   color:#2192FF;
+   transform: translateY(-5px);
+   transition:0.4s;
+   
+ }
+
+ .vl {
+   border-left: 3px solid #62CDFF ;
+   height: 70px;
+   margin-top: 10px;
+   margin-left: 13px;
+ }
+ .vl2{
+   border-left: 3px solid #62CDFF ;
+   height: 150px;
+   margin-top: 20px;
+   margin-left: 13px;
+ }
+
+
+    .pre{  /* the  first para of site */
+      display: grid;
+      width:105.6vw;
+      height: 23.7vw;
+      margin-left:12.25vw;
+      margin-top:7vw;
+     }
+    
+  
+  h3{ /* my name is */
+   color:#2192FF;
+   margin:0px;
+   font-size:1.3vw;
+   font-family: 'Fira Mono', monospace;
+  height:min-content;
+  padding-left:10px;
+
+  }
+  h1{  /* NAME main*/
+  
+   /* width:max-content; */
+   height: min-content;
+   margin: 0px;
+   font-size:6vw;
+   font-family: 'Patua One', cursive;
+   color:#06283D;
+}
+  .myself{  /* basic info */
+   color:#5aabf6;
+   height:min-content;
+   font-size: 1.3vw;
+   font-family: 'Fira Mono', monospace;  
+}
+#RESUME{
+   padding-top: 60px;
+   display:flex;
+   flex-wrap: wrap;
+}
+button {
+   font-family: 'Fira Mono', monospace;
+   font-size:1.5vw;
+   color: #AEE2FF;
+   text-transform: uppercase;
+   padding: 8px 15px;
+   border-radius: 10px;
+   border: 2px solid #2192FF;
+   background: #010A43 ;
+   box-shadow: 3px 3px #2192FF;
+   cursor: pointer;
+   margin: 10px 0;
+ }
+
+ button:active {
+   box-shadow: none;
+   transform: translate(3px, 3px);
+ }
+.hr2{
+   width: 69%;
+   background-color:#A2EAE2;
+     border-style: none;
+     border-top-style: solid;
+     border-bottom-style:solid;
+     border-top-width: 2px;
+     border-bottom-width: 2px;
+     border-color: #1D1CE5;
+  
+}
+
+a{  /*  VESIT link */
+   color: #ff0404;
+   text-decoration: none;
+}
+a:hover{
+   color: #010A43;
+}
+
+/*     DIV III     ###########################################################################################    */
+#AB{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top:50px;
+  padding-left:0px;
+  margin-bottom:200px;
+ 
+
+}
+.AB1{
+display: flex;
+ margin-top: 120px;
+ margin-left: 0px;
+}
+.AB2{
+   margin-top: 60px;
+   height:min-content;
+   width: max-content;
+   margin-left: 0px;
+}
+.AB2{
+   width: fit-content;
+   height:min-content;
+   font-size:1.2vw;
+   color:#2192FF;
+   font-family: 'Fira Mono', monospace;
+   font-weight: 600;
+   background: #06283D;
+   border-style: solid;
+   padding: 20px;
+   border-color: #010A43;
+   border-radius: 30px;
+   box-shadow: 5px 5px  #1D1CE5;
+}
+.img1{
+   height:min-content;
+   width: min-content;
+   margin-top:210px;
+   
+   margin-left:0px;
+ }
+.img1 .img{
+   height:19vw;
+   border-style: solid;
+   border-width: 2px;
+   border-radius: 10px;
+   padding: 15px;
+   border-color: #010A43;
+   box-shadow:  10px 15px 5px 1px #06283D;
+}
+.img img{
+   height: 18.2vw;
+   width: 18.2vw;
+ }
+
+/* about skills etc*/
+.headings{
+   color:#06283D;
+   height: min-content;
+   margin: 0px;
+   font-size:4.5vw;
+   font-family: 'PT Mono', monospace;
+   font-weight: bolder;
+}
+
+
+
+/*        DIV III  ###########################################################################    */
+#SKILLS{
+   margin-top: 50px;
+   padding-left:50px;
+   
+}
+.SK{
+   padding-left: 140px;
+}
+#SK1{
+   display: flex;
+   flex-wrap: wrap;
+   padding-left:60px;
+   padding-top: 30px;
+   justify-content: center; 
+}
+#SK2{
+   display: flex;
+   flex-wrap: wrap;
+   padding-left:100px;
+   justify-content:center;
+}
+.logo{
+  padding: 30px;
+}
+.container {
+   width: fit-content;
+   height: min-content;
+   display: grid;
+   background-color: #AEE2FF;
+   border-width: 2px;
+   border-style: solid;
+   border-color: #06283D;
+  border-radius: 30px;
+  margin: 20px;
+}
+.container:hover {
+   background-color: #AEE2FF;
+   border-color: #2192FF;
+   box-shadow:9px 9px #2192FF;
+   transition: 0.4s;
+   
+}
+   /**************************************************************************************/
+    /*------------------------------------------------------------*/
+   /* PROJECT SECTION 
+   * id --> PROJECT-->PR--> heading
+   *               -->PR2-->pcontainer-->p-->work-->img
+                                                 -->text
+   */
+#PROJECT{
+   padding-top: 150px;
+   padding-left:50px;
+}
+   .PR{
+     padding-left: 140px;
+   }
+
+   .PR2{
+       padding-left: 0px;
+       padding-top: 70px;
+   }
+   .pcontainer{
+      z-index: inherit;
+   padding-top:70px;
+   padding-left:200px;
+   background-color: #06283D;
+    box-shadow: 0 0 0 100vmax #06283D;
+    clip-path: inset(0 -100vmax);
+   }
+   .pcontainer .head{
+      color:#62CDFF;
+      height: min-content;
+      margin: 0px;
+      font-size:2.5vw;
+      font-family:  monospace;
+      text-decoration: none;
+      padding-bottom: 10px;
+   }
+   .pcontainer .p{
+      justify-content: space-evenly;
+   }
+   .para{
+      display: flex;
+   }
+   .p .para{
+      height: max-content;
+      width: max-content;
+      padding: 20px;
+      font-size:18px;
+      color:#06283D;
+      font-family: 'Fira Mono', monospace;
+     background-color: #62CDFF;
+     border-style: solid;
+     border-radius:5px;
+     border-color: #1D1CE5;
+   }
+   .p h2{
+   color:#62CDFF;
+   height: min-content;
+   font-size:14px;
+   font-family: 'PT Mono', monospace;
+   font-weight: bolder;
+   }
+   .icons{
+      display: flex;
+   }
+   .icons i{
+      padding-right: 20px;
+      font-size:30px;
+   }
+   .p .github i{
+      color: #DDE6ED;
+   }
+  /*********************************************************************************************/
+   .pcontainerR{
+      padding-top:50px;
+   }
+   .pcontainerR .pR{
+      padding-left:0px;
+   }
+   .pcontainerR .headR{
+      color:#010A43;
+         height: min-content;
+         margin: 0px;
+         font-size:2.2vw;
+         font-family: 'PT Mono', monospace;
+         text-decoration: none;
+         padding-bottom: 10px;
+    
+   }
+   .workR{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+   }
+   .workR .imgR{
+      display:grid;
+      padding: 20px;
+      height: max-content;
+      width: max-content;
+      margin-top: 10px;
+    }
+    .workR img{
+      height:350px;
+      width: 450px;
+    }
+    .workR .imgR i{
+      padding-top:20px;
+      font-size:30px;
+    }
+   .pR .workR .textR .cont{
+      height: max-content;
+      width: max-content;
+      padding: 20px;
+      font-size:15px;
+      color:#62CDFF;
+      font-family: 'Fira Mono', monospace;
+     background-color: #06283D;
+     border-style: solid;
+     border-radius:5px;
+   }
+   .pR h2{
+   color:#06283D;
+   height: min-content;
+   font-size:13px;
+   font-family: 'PT Mono', monospace;
+   font-weight: bolder;
+   }
+   .iconsR{
+      display: flex;
+      
+   }
+   .iconsR i{
+      padding-right: 20px;
+      font-size:30px;
+   }
+      /*------------------------------------------------------------*/
+      .pcontainerL{
+         z-index: inherit;
+         padding-top:50px;
+         background-color: #06283D;
+         box-shadow: 0 0 0 100vmax #06283D;
+         clip-path: inset(0 -100vmax);
+      }
+      .pcontainerL .headL{
+         color:#62CDFF;
+         height: min-content;
+         margin: 0px;
+         font-size:2.2vw;
+         font-family: 'PT Mono', monospace;
+         text-decoration: none;
+         padding-bottom: 10px;
+       
+      }
+      .workL{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+         
+      }
+    .workL .imgL{
+      display:grid;
+      padding: 20px;
+      height: max-content;
+      width: max-content;
+      margin-top: 10px;
+    }
+    .workL .imgL i{
+      padding-top:20px;
+      font-size: 30px;
+    }
+      .pL .workL .textL .cont{
+         height: max-content;
+         width: max-content;
+         padding: 20px;
+         font-size:15px;
+         color:#06283D;
+         font-family: 'Fira Mono', monospace;
+        background-color: #62CDFF;
+        border-style: solid;
+        border-radius:5px;
+        border-color: #1D1CE5;
+      }
+    
+      .iconsL{
+         display: flex;
+       
+      }
+      .iconsL i{
+         padding-right: 20px;
+         font-size: 30px;
+      }
+      .pL h2{
+         color:#62CDFF;
+         height: min-content;
+         font-size:13px;
+         font-family: 'PT Mono', monospace;
+         font-weight: bolder;
+         }
+      .github{
+         display:flex;
+      }
+      .github i{
+         padding-top: 10px;
+         padding-bottom: 30px;
+         font-size: 30px;
+      }
+      /**********************************************************************************/
+  .CO{
+   padding-top: 200px;
+   position: relative;
+   margin-inline: auto;
+  }
+  .CO2{
+   height: max-content;
+   width: max-content;
+   margin-top: 50px;
+   padding: 10px;
+   font-size:19px;
+   font-weight: 550;
+   color:#06283D;
+   font-family: 'Fira Mono', monospace;
+   font-weight: 500px;
+}
+.CO2 i{
+   font-size:35px;
+   color: #2192FF;
+   padding: 10px;
+}
+.CO2 h2{
+   font-family: 'PT Mono', monospace;
+   color: #06283D;
+   font-size: 20px;
+}
+/*form*/
+.contact-form {
+   background-color: #bee5fa;
+   padding: 20px;
+   border-radius: 10px;
+   text-align: left;
+   display:block;
+   border: 3px solid #06283D;
+   box-shadow: 9px 9px #2192FF;
+ }
+.contact-form label {
+   color: black;
+ }
+ .contact-form form {
+   display: flex;
+   flex-direction: column;
+ }
+ .contact-form label {
+   margin-bottom: 10px;
+   font-family: 'PT Mono', monospace;
+ }
+ 
+ textarea {
+   resize: none;
+   height: 80px;
+   width: 500px;
+ }
+ 
+ .contact-form input, .contact-form textarea {
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   border-style: solid;
+   border-color: #1D1CE5;
+   margin-bottom: 20px;
+   background-color: transparent;
+ }
+ .contact-form input:focus, .contact-form textarea:focus{
+   border-radius: 5px;
+   border-style: solid;
+   border-color: #090909;
+   background-color: #2192FF;
+ } 
+
+.END h2{
+   display: n;
+   font-size: 1.9vw;
+   font-family: 'Fira Mono', monospace;
+   margin-top:30px;
+   color:#06283D;  
+}
+/***************************/
+.ENDt{
+   display: none;
+   background-color: #06283D;
+   box-shadow: 0 0 0 100vmax #06283D;
+   clip-path: inset(0 -100vmax);
+}
+
+
+
